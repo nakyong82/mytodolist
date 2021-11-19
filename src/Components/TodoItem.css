@@ -9,17 +9,24 @@
   display: flex;
   flex-direction: row;
 }
+.UnTodoCheck{
+  display: flex;
+  flex-direction: row;
+}
+.text {
+  padding-left: 15px;
+  font-weight: 500;
+  font-size: 20px;
+}
+.UnTodoCheck {
+  color:rgb(121, 175, 214);
+  text-decoration: line-through;
+}
 .checkButton {
   font-size: 25px;
   font-weight: 100;
   cursor: pointer;
   color: rgb(121, 175, 214);
-}
-
-.text {
-  padding-left: 15px;
-  font-weight: 500;
-  font-size: 20px;
 }
 
 .removeButton {

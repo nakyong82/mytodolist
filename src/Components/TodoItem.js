@@ -9,14 +9,13 @@ const TodoItem = ({ todos, setTodos }) => {
   };
   
   const OnRemove = (id) => {
-    const nextTodos = todos.filter(todos => todos.id !== id);
-    setTodos(nextTodos);
+    setTodos((todos) => todos.filter((todos) => todos.id !== id));
   }
 
   return (
     <div className="TodoItem">
-      <div className="TodoCheck">
-        <div className="checkButton">{ checked ? <MdRadioButtonChecked onClick={() => CheckChange(id)} /> : <MdRadioButtonUnchecked onClick={() => CheckChange(id)} />} </div>
+      <div className={checked ? "UnTodoCheck" : "TodoCheck"}>
+        <div className="checkButton">{ checked ? <MdRadioButtonChecked onClick={() => CheckChange(id)} /> : <MdRadioButtonUnchecked onClick={() => CheckChange(id)} />}</div>
         <div className="text">{ text }</div> 
       </div>
       <div className="removeButton"><MdOutlineDeleteForever onClick={() => OnRemove(id)} /></div>
