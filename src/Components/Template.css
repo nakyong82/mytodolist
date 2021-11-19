@@ -1,0 +1,23 @@
+.Template {
+  width: 500px;
+  margin: auto auto;
+}
+
+.title {
+  height: 45px;
+  margin-top: 30px;
+  padding: 15px;
+  background-color: rgb(121, 175, 214);
+  border-radius: 10px;
+
+  font-size: 30px;
+  font-weight: 350;
+  color: rgb(255, 255, 255);
+
+}
+
+.content {
+  padding: 15px;
+  background-color: white;
+  border-radius: 10px;
+}
