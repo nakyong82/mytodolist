@@ -3,13 +3,12 @@
   flex-flow: row nowrap;
   justify-content: space-between;
   padding: 10px;
-
 }
 .TodoCheck {
   display: flex;
   flex-direction: row;
 }
-.UnTodoCheck{
+.UnTodoCheck {
   display: flex;
   flex-direction: row;
 }
@@ -19,7 +18,7 @@
   font-size: 20px;
 }
 .UnTodoCheck {
-  color:rgb(121, 175, 214);
+  color: rgb(121, 175, 214);
   text-decoration: line-through;
 }
 .checkButton {
